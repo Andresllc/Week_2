@@ -1,16 +1,26 @@
-let mynumber: number;
-let myStrring: String;
-let myBoolean: Boolean;
-let myArrayNumber: Number[];
-let myArrayString: String[];
-
-mynumber = 69;
-myStrring = "Sesenta y nueve";
-myBoolean = true;
-myArrayString = ["Alba","Irene","Claudia"];
-
-console.log(mynumber);
-console.log(myStrring);
-console.log(myBoolean);
-console.log(myArrayNumber);
-console.log(myArrayString);
+export class Person {
+    public name:string;
+    public age:number;
+    private address:string;
+    
+        constructor (name:string, age:number,address:string){
+            this.name = name;
+            this.age = age;   
+            this.address = address;
+                   
+        }
+        public printName():string{
+            return this.name
+        }
+        public yearOfBirth(currentYear:number):number{
+            return  currentYear - this.age;        
+           
+        }
+        public setAddress(address:string){
+           this.address = address;
+        }
+        public getAddress():string{
+            return this.address;
+        }
+        
+    }
