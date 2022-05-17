@@ -1,1 +1,14 @@
-console.log("Prueba");
+var mynumber;
+var myStrring;
+var myBoolean;
+var myArrayNumber;
+var myArrayString;
+mynumber = 69;
+myStrring = "Sesenta y nueve";
+myBoolean = true;
+myArrayString = ["Alba", "Irene", "Claudia"];
+console.log(mynumber);
+console.log(myStrring);
+console.log(myBoolean);
+console.log(myArrayNumber);
+console.log(myArrayString);
