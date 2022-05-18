@@ -68,5 +68,5 @@ export class Book
                 "Author - " + this.author + "\n"+
                 "Editorial - " + this.editorial
                 
-    }           
+    }
 }
