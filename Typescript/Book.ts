@@ -60,7 +60,7 @@ export class Book
     }
 
     // Metodo
-    public toString():string
+    public toStringBook():string
     {
         return "Title - " + this.title + "\n"+
                 "Numero de paginas - " + this.nPages + "\n" +
