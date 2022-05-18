@@ -1,26 +1,37 @@
-export class Person {
-    public name:string;
-    public age:number;
-    private address:string;
-    
-        constructor (name:string, age:number,address:string){
-            this.name = name;
-            this.age = age;   
-            this.address = address;
-                   
-        }
-        public printName():string{
-            return this.name
-        }
-        public yearOfBirth(currentYear:number):number{
-            return  currentYear - this.age;        
-           
-        }
-        public setAddress(address:string){
-           this.address = address;
-        }
-        public getAddress():string{
-            return this.address;
-        }
-        
+export class Person
+{
+    //Declaracionde Atributos
+    public Name: string;
+    public Age: number;
+    private Address: string;
+
+    //Implementacion del metodo constructror
+    constructor(Name: string, Age: number, Address: string)
+    {
+        this.Name = Name;
+        this.Age = Age;
+        this.Address = Address;
     }
+
+    // Get & Set
+    public getAdress():string
+    {
+        return this.Address;
+    }
+
+    public setAddress(Address:string): void
+    {
+        this.Address = Address
+    }
+
+    //metodos
+    public printName(): void
+    {
+        console.log(this.Name);
+    }
+
+    public yearOfBrith(ActualYear:number):number
+    {
+        return ActualYear - this.Age;  
+    }
+}
