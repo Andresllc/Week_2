@@ -1,0 +1,11 @@
+"use strict";
+exports.__esModule = true;
+var Person_1 = require("./Person");
+var person1 = new Person_1.Person("Alba", 21, "Carretera de Húmera");
+console.log(person1.Name);
+console.log(person1.Age);
+person1.printName();
+console.log(person1.yearOfBrith(2022));
+console.log(person1.getAdress());
+person1.setAddress("Calle de la Grandeza Española");
+console.log(person1.getAdress());
